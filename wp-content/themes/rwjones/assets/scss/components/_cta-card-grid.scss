@@ -1,0 +1,157 @@
+.card-section{
+    position: relative;
+    .title{
+        margin-bottom: 50px;
+        color: $primary-2;
+    }
+    .no-img{
+        .card-wrap{
+            z-index: 5;
+            position: relative;
+            background: $white;
+            margin-top: 10px;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0px 4px 34px 4px rgba(0, 0, 0, 0.25);
+            &:hover{
+                .copy,.cta-title,.icon i{
+                    color: $primary-1;
+                }
+            }
+            &__inner{
+                padding: 30px;
+                min-height: 260px;
+                height: 100%;
+                @include media-breakpoint-up(lg){
+                    min-height: 360px;
+                }
+                @include media-breakpoint-up(xl){
+                min-height: 330px;
+                }
+
+            }
+            .cta-title{
+                font-size: 1.375em;
+                color: $primary-2;
+                font-weight: bold;
+            }
+            .copy{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 1.25em;
+                color: $font-color;
+            }
+            .icon{
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .home{
+        //background-color: $tertiary-4;
+        position: relative;
+        .card-wrap{
+            z-index: 5;
+            position: relative;
+            background: $white;
+            margin-top: 10px;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0px 4px 34px 4px rgba(0, 0, 0, 0.25);
+            &:hover{
+                .copy,.cta-title,.icon i{
+                    color: $primary-1;
+                }
+            }
+            @include media-breakpoint-up(lg){
+                margin-top: 0px;
+                box-shadow: none;
+            }
+            &__bg-img{
+                display: none;
+                @include media-breakpoint-up(lg){
+               
+                display: block;
+                min-height: 158px;
+                width: 100%;
+                background-repeat: no-repeat !important;
+                background-position: center !important;
+                background-size: cover !important;
+                }
+            }
+            &__inner{
+                padding: 30px;
+                min-height: 260px;
+                height: 72%;
+                @include media-breakpoint-up(lg){
+                    min-height: 360px;
+                }
+                @include media-breakpoint-up(xl){
+                min-height: 330px;
+                }
+
+            }
+            .cta-title{
+                font-size: 1.375em;
+                color: $primary-2;
+                font-weight: bold;
+            }
+            .copy{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 1.25em;
+                color: $font-color;
+            }
+            .icon{
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+        .layer-1 {
+            content:'';
+            position:absolute;
+            height: 100%;
+            width: 100%;
+            top: 37%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: $primary-1;
+            overflow: hidden;
+            z-index:0;
+            //left: -12%;
+            @include media-breakpoint-up(lg){
+                top: unset;
+                height: 300px;
+                width: 103%;
+                bottom: -87px;
+                border-top-left-radius: 30%;
+                border-top-right-radius: 30%;
+                left: -1%;
+            }
+        }
+        .layer-2 {
+            content:'';
+            position:absolute;
+            height: 100%;
+            width: 100%;
+            top: 48%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: $primary-2;
+            overflow: hidden;
+            z-index:1;
+            //left: -12%;
+            @include media-breakpoint-up(lg){
+                top: unset;
+                height: 300px;
+                width: 103%;
+                bottom: -157px;
+                border-top-left-radius: 30%;
+                border-top-right-radius: 30%;
+                left: -1%;
+            }
+        }
+    }
+}

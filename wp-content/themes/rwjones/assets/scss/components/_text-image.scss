@@ -1,0 +1,29 @@
+.text-image-section{
+    margin-bottom: 60px;
+    @include media-breakpoint-up(lg){ 
+        margin-bottom: 0;
+    }
+    .img-text-wrap{
+        position: relative;
+        .title{
+            @include media-breakpoint-up(lg){ 
+                max-width: 380px;
+                top: 23%;
+                position: absolute;
+            }
+            h2{
+              font-size: 1.875em; 
+              margin:0;
+              padding:0;
+                @include media-breakpoint-up(lg){
+               font-size: 3.125em; 
+            }
+            }
+        }
+        .img{
+            @include media-breakpoint-up(lg){
+            text-align: right;
+            }
+        }
+    }
+}

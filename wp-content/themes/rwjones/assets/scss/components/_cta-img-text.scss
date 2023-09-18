@@ -1,0 +1,75 @@
+.cta-img-text-section{
+    //background-color: $tertiary-4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+
+    @include media-breakpoint-up(lg){
+        padding-top: 100px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .text{
+        font-size: 1.25em;
+        color: $primary-2;
+        text-align: center;
+        padding-top: 30px;
+        @include media-breakpoint-up(lg){
+            font-size: 2.5em;
+            text-align: left;
+            padding-top: 0;
+        }
+        a{
+                background: $primary-1 !important;
+                border-radius: 4px !important;
+                border: none !important;
+                color: $white !important;
+                height: 55px !important;
+                max-width: 300px;
+                padding: 17px 25px;
+                font-weight: bold;
+                text-transform: uppercase;
+                -webkit-transition: ease-out 0.4s !important;
+                -moz-transition: ease-out 0.4s !important;
+                transition: ease-out 0.4s !important;
+                border: none;
+                &:hover,&:focus{
+                    border-bottom: none !important;
+                   
+                  }
+                }
+                .slide{
+                    margin:0;
+                    border: none;
+                    &:hover,&:focus{
+                      border-radius: 4px !important;
+                      box-shadow: inset 300px 0 0 0 var(--hover);
+                      text-decoration: none;
+                      border: none;
+                    }
+                  }
+
+              
+
+    }
+    .image{
+        text-align: center;
+        @include media-breakpoint-up(lg){
+            min-height: 668px;
+        }
+            img{
+                max-width: 180px;
+                margin-top: 100px;
+                @media (min-width:769px) and (max-width:1450px) {
+                    position: absolute;
+                    top: 10%;   
+                    right: -50px;
+                }
+                @include media-breakpoint-up(md){
+                    max-width: unset;
+                    margin-top: unset;
+                }
+
+            }
+    }
+}

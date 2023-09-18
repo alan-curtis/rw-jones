@@ -1,0 +1,79 @@
+.banner-cta-section{
+    min-height: 275px;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    mix-blend-mode: multiply;
+    position: relative;
+    
+    @include media-breakpoint-up(md){
+        min-height: 415px;
+    }
+    .layer {
+        content:'';
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        
+        
+        z-index:-1;
+        background-color: $primary-1;
+        @include media-breakpoint-up(md){
+            background-color: rgba(40, 115, 82, 0.8);
+            mix-blend-mode: multiply;
+        }
+    }
+.content-height{
+    min-height: 500px;
+    @include media-breakpoint-up(md){
+        min-height: 415px;
+    }
+        .content-wrap{
+            color: $white;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            @include media-breakpoint-up(md){
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+            h2{
+                padding:0;
+                margin:0;
+            }
+            .copy{
+                font-size: 1.25em;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            a{
+                background: $secondary !important;
+                border-radius: 4px !important;
+                border: none !important;
+                color: $button-text !important;
+                height: 55px !important;
+                max-width: 300px;
+                padding: 17px 25px;
+                font-weight: bold;
+                text-transform: uppercase;
+                -webkit-transition: ease-out 0.4s !important;
+                -moz-transition: ease-out 0.4s !important;
+                transition: ease-out 0.4s !important;
+                border: none;
+                &:hover,&:focus{
+                    border-bottom: none !important;
+            
+                  }
+                }
+                .slide{
+                    margin:0;
+                    border: none;
+                    &:hover,&:focus{
+                      border-radius: 4px !important;
+                      box-shadow: inset 156px 0 0 0 var(--hover);
+                      text-decoration: none;
+                      border: none;
+                    }
+                  }
+        }
+    }
+}

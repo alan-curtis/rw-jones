@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    width: 100%;
+    font-family: $font;
+    overflow-x: hidden;
+    color: $body;
+    font-size: 1em;
+    @include media-breakpoint-up(md) {
+        font-size: 1.125em;
+    }
+}
+.page{
+    position: relative;
+    margin-bottom: 0;
+  }
+a {
+font-family: $font;
+color: $body;
+text-decoration: none;
+&:link,
+&:visited {
+    color: $body;
+}
+&:hover{
+    color: $body;
+    text-decoration: underline;
+}
+}
+ul {
+-webkit-padding-start: 0;
+}
+
+li a {
+text-decoration: none;
+margin: auto 5px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: $font;
+font-weight: 700;
+line-height: 1.2em;
+letter-spacing: normal;
+text-transform: none;
+}
+h1 {
+font-size: 2.5rem;
+    @include media-breakpoint-up(md) {
+        font-size: 3.125rem;
+    }
+}
+
+h2 {
+padding-top: 15px;
+padding-bottom: 15px;
+font-size: 1.875rem;
+    @include media-breakpoint-up(md) {
+        font-size: 2.5rem;
+    }
+}
+
+h3 {
+padding-top: 15px;
+padding-bottom: 15px;
+font-size: 2.063rem;
+    @include media-breakpoint-up(md) {
+        font-size: 2.5rem;
+    }
+}
+
+h4 {
+font-size: 1.5rem;
+    @include media-breakpoint-up(md) {
+        font-size: 1.75rem;
+    }
+}
+
+h5 {
+font-size: 1.25rem;
+    @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+    }
+}
+
+h6 {
+font-size: 1.125rem;
+    @include media-breakpoint-up(md) {
+        font-size: 1.25rem;
+    }
+}
